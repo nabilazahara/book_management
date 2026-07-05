@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Management System</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#fff7fb;
+}
+
+.navbar{
+background:#f8c8dc;
+}
+
+.navbar-brand{
+color:#b03060 !important;
+font-weight:bold;
+}
+
+.hero{
+
+background:white;
+
+padding:60px;
+
+border-radius:20px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.title{
+color:#d63384;
+font-weight:bold;
+}
+
+.btn-pink{
+
+background:#f48fb1;
+
+color:white;
+
+border:none;
+
+}
+
+.btn-pink:hover{
+
+background:#ec6c9d;
+
+color:white;
+
+}
+
+footer{
+
+margin-top:60px;
+
+color:#777;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar shadow-sm">
+
+<div class="container">
+
+<a href="/" class="navbar-brand">
+
+📚 Book Management System
+
+</a>
+
+<a href="/books" class="btn btn-light">
+
+📖 Daftar Buku
+
+</a>
+
+</div>
+
+</nav>
+
+<div class="container mt-5">
+
+<div class="hero text-center">
+
+<h1 class="title">
+
+👋 Selamat Datang
+
+</h1>
+
+<p class="lead">
+
+Aplikasi sederhana untuk mengelola daftar buku.
+
+</p>
+
+<hr>
+
+<h5>
+
+Total Buku
+
+</h5>
+
+<h1 class="title">
+
+<%= totalBooks %>
+
+</h1>
+
+<br>
+
+<a href="/books" class="btn btn-pink btn-lg">
+
+📚 Lihat Daftar Buku
+
+</a>
+
+</div>
+
+<footer class="text-center">
+
+<hr>
+
+© 2026 Book Management System
+
+</footer>
+
+</div>
+
+</body>
+
+</html>
