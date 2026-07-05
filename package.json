@@ -1,17 +1,22 @@
 {
   "name": "book_management",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Simple Book Management System with CI",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nabila Zahara",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "ejs": "^6.0.1",
+    "ejs": "^3.1.10",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2",
+    "supertest": "^7.2.2"
   }
 }

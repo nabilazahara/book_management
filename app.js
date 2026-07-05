@@ -131,6 +131,12 @@ app.get("/books/:id", (req, res) => {
 
 });
 
-app.listen(PORT, () => {
-    console.log(`Server berjalan di http://localhost:${PORT}`);
-});
+// Menjalankan server hanya jika app.js dijalankan langsung
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server berjalan di http://localhost:${PORT}`);
+    });
+}
+
+// Export app untuk testing
+module.exports = app;
